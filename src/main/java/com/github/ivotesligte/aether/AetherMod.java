@@ -1,13 +1,14 @@
 package com.github.ivotesligte.aether;
 
 import net.fabricmc.api.ModInitializer;
-
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import net.minecraft.world.dimension.DimensionOptions;
 import net.minecraft.world.dimension.DimensionType;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,6 +36,12 @@ public class AetherMod implements ModInitializer {
 
 		LOGGER.info("Initializing.");
         AetherCommands.register();
+        CustomPortalBuilder.beginPortal()  
+            .frameBlock(Blocks.GOLD_BLOCK)
+            .destDimID(AETHER_DIMENSION_KEY.getValue())  
+            .tintColor(45,65,101)
+            .registerPortal();
+        
         LOGGER.info("Finished initializing.");
 	}
 }
