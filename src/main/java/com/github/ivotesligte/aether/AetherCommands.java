@@ -26,7 +26,7 @@ public class AetherCommands {
         if (world == null) {
             AetherMod.LOGGER.error("Tried to teleport, but the Aether world is not registered. Is the key " + AetherMod.AETHER_DIMENSION_WORLD + " correct?");
         } else {
-            player.teleport(world, 0.0, 0.0, 0.0, Set.of(), 0.0f, 0.0f, true);
+            player.teleport(world, 0.0, 100.0, 0.0, Set.of(), 0.0f, 0.0f, true);
             AetherMod.LOGGER.info("Teleported to the aether.");
         }
         return 1;

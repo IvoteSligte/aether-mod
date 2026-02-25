@@ -7,7 +7,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "minecraft:ocean",
+          "biome": "minecraft:nether_wastes",
           "parameters": {
             "temperature": -0.15,
             "humidity": 0.2,
