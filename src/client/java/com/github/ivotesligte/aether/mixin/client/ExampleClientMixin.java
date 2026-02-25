@@ -1,4 +1,4 @@
-package com.github.ivotesligte.mixin.client;
+package com.github.ivotesligte.aether.mixin.client;
 
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;

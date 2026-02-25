@@ -1,12 +1,12 @@
-package com.github.ivotesligte;
+package com.github.ivotesligte.aether;
 
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class AetherDimension implements ModInitializer {
-	public static final String MOD_ID = "aether-dimension";
+public class AetherMod implements ModInitializer {
+	public static final String MOD_ID = "aether-mod";
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.

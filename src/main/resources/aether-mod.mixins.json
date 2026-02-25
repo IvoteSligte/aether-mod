@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.github.ivotesligte.mixin",
+	"package": "com.github.ivotesligte.aether.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"

@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "aether-dimension",
+	"id": "aether-mod",
 	"version": "${version}",
-	"name": "Aether Dimension",
+	"name": "Aether Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,20 +12,20 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/aether-dimension/icon.png",
+	"icon": "assets/aether-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.github.ivotesligte.AetherDimension"
+			"com.github.ivotesligte.aether.AetherMod"
 		],
 		"client": [
-			"com.github.ivotesligte.AetherDimensionClient"
+			"com.github.ivotesligte.aether.AetherModClient"
 		]
 	},
 	"mixins": [
-		"aether-dimension.mixins.json",
+		"aether-mod.mixins.json",
 		{
-			"config": "aether-dimension.client.mixins.json",
+			"config": "aether-mod.client.mixins.json",
 			"environment": "client"
 		}
 	],

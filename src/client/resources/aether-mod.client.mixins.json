@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.github.ivotesligte.mixin.client",
+	"package": "com.github.ivotesligte.aether.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 		"ExampleClientMixin"

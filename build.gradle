@@ -22,7 +22,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"aether-dimension" {
+		"aether-mod" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
