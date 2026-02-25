@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "aether-mod",
+	"id": "aether_mod",
 	"version": "${version}",
 	"name": "Aether Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/aether-mod/icon.png",
+	"icon": "assets/aether_mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -23,9 +23,9 @@
 		]
 	},
 	"mixins": [
-		"aether-mod.mixins.json",
+		"aether_mod.mixins.json",
 		{
-			"config": "aether-mod.client.mixins.json",
+			"config": "aether_mod.client.mixins.json",
 			"environment": "client"
 		}
 	],
