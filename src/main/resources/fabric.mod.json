@@ -20,7 +20,10 @@
 		],
 		"client": [
 			"com.github.ivotesligte.aether.AetherModClient"
-		]
+		],
+      "fabric-datagen": [
+        "com.github.ivotesligte.aether.AetherModDataGenerator"
+      ]
 	},
 	"mixins": [
 		"aether_mod.mixins.json",

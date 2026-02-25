@@ -1,6 +1,5 @@
 package com.github.ivotesligte.aether;
 
-import com.github.ivotesligte.aether.AetherMod;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -34,9 +33,10 @@ public class AetherDimension {
             1.0f, // ambientLight
             new DimensionType.MonsterSettings(UniformIntProvider.create(0, 0), 0), // monsterSettings
             DimensionType.Skybox.OVERWORLD, // skybox
-DimensionType.CardinalLightType.DEFAULT, // cardinalLightType
-EnvironmentAttributeMap.EMPTY, // attributes
-RegistryEntryList.empty() // timelines
+            DimensionType.CardinalLightType.DEFAULT, // cardinalLightType
+            EnvironmentAttributeMap.EMPTY, // attributes
+            RegistryEntryList.empty() // timelines
         ));
+        AetherMod.LOGGER.info("Registered the Aether dimension type.");
     }
 }
