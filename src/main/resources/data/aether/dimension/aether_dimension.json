@@ -1,5 +1,5 @@
 {
-  "type": "aether:aether_dimension_type",
+  "type": "aether:aether_dimension",
   "generator": {
     "type": "minecraft:noise",
     "settings": "minecraft:overworld",
