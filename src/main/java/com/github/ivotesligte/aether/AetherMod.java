@@ -13,7 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class AetherMod implements ModInitializer {
-	public static final String MOD_ID = "aether_mod";
+	public static final String MOD_ID = "aether";
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -25,7 +25,7 @@ public class AetherMod implements ModInitializer {
     public static final RegistryKey<World> AETHER_DIMENSION_WORLD = RegistryKey.of(RegistryKeys.WORLD,
             Identifier.of(AetherMod.MOD_ID, "aether_dimension"));
     public static final RegistryKey<DimensionType> AETHER_DIMENSION_TYPE = RegistryKey.of(RegistryKeys.DIMENSION_TYPE,
-            Identifier.of(AetherMod.MOD_ID, "aether_dimension_type"));
+            Identifier.of(AetherMod.MOD_ID, "aether_dimension"));
     
 	@Override
 	public void onInitialize() {

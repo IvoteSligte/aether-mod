@@ -2,6 +2,7 @@ package com.github.ivotesligte.aether;
 
 import net.minecraft.server.world.ServerWorld;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 import com.mojang.brigadier.context.CommandContext;
@@ -20,12 +21,14 @@ public class AetherCommands {
 
     private static int aetherTeleport(CommandContext<ServerCommandSource> context) {
         ServerPlayerEntity player = context.getSource().getPlayer();
-        ServerWorld world = context.getSource().getServer().getWorld(AetherMod.AETHER_DIMENSION_WORLD);
+        MinecraftServer server = context.getSource().getServer();
+        ServerWorld world = server.getWorld(AetherMod.AETHER_DIMENSION_WORLD);
         if (world == null) {
-            AetherMod.LOGGER.error("Tried to teleport, but the Aether world is null.");
+            AetherMod.LOGGER.error("Tried to teleport, but the Aether world is not registered. Is the key " + AetherMod.AETHER_DIMENSION_WORLD + " correct?");
+        } else {
+            player.teleport(world, 0.0, 0.0, 0.0, Set.of(), 0.0f, 0.0f, true);
+            AetherMod.LOGGER.info("Teleported to the aether.");
         }
-        player.teleport(world, 0.0, 0.0, 0.0, Set.of(), 0.0f, 0.0f, true);
-        AetherMod.LOGGER.info("Teleported to the aether.");
         return 1;
     }
 }
